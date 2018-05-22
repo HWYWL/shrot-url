@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>短网址,短网址生成,短链接,网址缩短</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/urls.css">
+    <link rel="Bookmark" href="/favicon/favicon.ico">
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <img src="static/img/logo.gif" class="img-responsive center-block" alt="Cinque Terre">
+            <h3 class="text-center">短链接生成器</h3>
+            <div class="form-group">
+                <label>请输入长网址(新浪)</label>
+                <textarea class="form-control" rows="3" id = "sinaurl" ></textarea>
+            </div>
+            <button type="button" class="btn btn-success" onclick = "getSinaShortUrl()"> <span class="glyphicon glyphicon-send" aria-hidden="true" ></span> 新浪生成
+            </button>
+        </div>
+
+    </div>
+
+    <h3></h3>
+    <div class="alert alert-dismissable alert-success hidden" id = "sUrlDiv">
+        <h4>
+            短网址
+        </h4> <strong id = "sUrl"></strong>
+
+    </div>
+</div>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="static/js/urls.js"></script>
+
+</body>
