@@ -22,7 +22,7 @@ func (this *UrlController) Get() {
 	req.Param("source",source)
 	req.Param("url_long",url)
 
-	s, _ := req.String()
+	s, err := req.String()
 
 	this.Data["json"] = map[string]interface{}{"code": 0,"data": s, "message": err}
 	this.ServeJSON()
