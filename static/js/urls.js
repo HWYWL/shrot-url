@@ -13,7 +13,8 @@ function getSinaShortUrl() {
         success : function(data) {
             $('#sUrlDiv').removeClass("hidden")
             if (data.code == 0) {
-                $('#sUrl').html(data.data);
+                var dt = data.data[0].url_short
+                $('#sUrl').html(dt);
             }
         }
     });
